@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .formclass{width:500px; margin-left:200px;}
+  </style>
+
+
+</head>
+<body>
+
+<form class="formclass">
+
+  <div class="form-group"> <!-- Name field -->
+    <label class="control-label " for="name">Name</label>
+    <input class="form-control" id="name" name="name" type="text"/>
+  </div>
+  
+  <div class="form-group has-error"> <!-- Email field compulsory / mandatory!-->
+    <label for="email_id" class="control-label">Email</label>
+    <input type="email" class="form-control" id="email_id" name="email_name" value="support2formden.com" aria-describedby="email_help">
+    <p id="email_help" class="help-block">You must include a valid email address.</p>               
+  </div>
+  
+  <div class="form-group"> <!-- Subject field -->
+    <label class="control-label " for="subject">Subject</label>
+    <input class="form-control" id="subject" name="subject" type="text"/>
+  </div>
+  
+  <div class="form-group"> <!-- Message field -->
+    <label class="control-label " for="message">Message</label>
+    <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+  </div>
+  
+</form>               
+            
+
+</body>
+</html>
